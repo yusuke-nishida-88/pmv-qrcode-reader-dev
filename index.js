@@ -6,7 +6,7 @@ window.onload = function() {
     .then(() => {
         const idToken = liff.getDecodedIDToken();
         if (idToken){
-            window.alert(idToken.sub);
+            window.alert(idToken.email);
         }
     })
     .catch((err) => {
