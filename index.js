@@ -1,7 +1,7 @@
 window.onload = function() {
     liff
     .init({
-        liffId: "1661178769-pwmMGL6x"
+        liffId: "1661178769-BzE7Vbj8"
     })
     .then(() => {
         const idToken = liff.getDecodedIDToken();
