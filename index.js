@@ -5,7 +5,9 @@ window.onload = function() {
     })
     .then(() => {
         const idToken = liff.getDecodedIDToken();
-        window.alert(idToken);
+        if (idToken){
+            window.alert(idToken.sub);
+        }
     })
     .catch((err) => {
         window.alert('Something went wrong with LIFF initialization.');
